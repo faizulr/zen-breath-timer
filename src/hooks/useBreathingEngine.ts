@@ -108,7 +108,7 @@ export function useBreathingEngine() {
           phase: nextPhase,
           countdown: PHASE_DURATIONS[nextPhase],
           // Increment cycle count when we complete an exhale (full cycle)
-          cycleCount: state.phase === "exhale" ? prev.cycleCount + 1 : prev.cycleCount,
+          cycleCount: prev.phase === "exhale" ? prev.cycleCount + 1 : prev.cycleCount,
         }));
       } else {
         setState(prev => ({
