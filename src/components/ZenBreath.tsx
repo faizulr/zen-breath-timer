@@ -54,12 +54,13 @@ export function ZenBreath() {
       </motion.header>
 
       {/* Main content */}
-      <main className="relative z-10 flex flex-col items-center justify-center flex-1 w-full max-w-md space-y-12">
+      <main className="relative z-10 flex flex-col items-center justify-center flex-1 w-full max-w-md space-y-16">
         {/* Phase display */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
+          className="relative z-20"
         >
           <PhaseDisplay phase={phase} countdown={countdown} />
         </motion.div>
@@ -69,12 +70,15 @@ export function ZenBreath() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.5 }}
+          className="relative z-0"
         >
           <BreathingCircle phase={phase} phaseDuration={phaseDuration} />
         </motion.div>
 
         {/* Cycle counter */}
-        <CycleCounter count={cycleCount} />
+        <div className="relative z-20">
+          <CycleCounter count={cycleCount} />
+        </div>
       </main>
 
       {/* Footer with controls and instruction */}
