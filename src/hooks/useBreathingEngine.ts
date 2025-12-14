@@ -62,19 +62,19 @@ export function useBreathingEngine() {
     });
   }, [triggerHaptic]);
 
-  // Stop and reset
+  // Stop and reset (preserve cycle count)
   const stop = useCallback(() => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
     
-    setState({
+    setState(prev => ({
       phase: "ready",
       countdown: 0,
       isActive: false,
-      cycleCount: 0,
-    });
+      cycleCount: prev.cycleCount,
+    }));
   }, []);
 
   // Toggle between start and stop
