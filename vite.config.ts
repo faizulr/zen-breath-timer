@@ -17,8 +17,8 @@ export default defineConfig(({ mode }) => ({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "robots.txt"],
       manifest: {
-        name: "Zen Breath",
-        short_name: "Zen Breath",
+        name: "Calm Breath Cycle",
+        short_name: "Calm Breath",
         description: "A calming 4-7-8 breathing exercise app to reduce anxiety and promote relaxation.",
         theme_color: "#0f172a",
         background_color: "#0a0d14",
