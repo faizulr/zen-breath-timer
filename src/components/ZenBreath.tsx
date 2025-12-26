@@ -49,7 +49,7 @@ export function ZenBreath() {
         transition={{ delay: 0.2 }}
         className="relative z-10 flex items-center justify-between w-full max-w-md"
       >
-        <h2 className="text-lg font-medium text-foreground/80">Zen Breath</h2>
+        <h2 className="text-lg font-medium text-foreground/80">Calm Breath Cycle</h2>
         <MuteButton isMuted={isMuted} onToggle={toggleMute} />
       </motion.header>
 

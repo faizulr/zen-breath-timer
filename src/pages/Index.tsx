@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Zen Breath - 4-7-8 Breathing Exercise</title>
+        <title>Calm Breath Cycle - 4-7-8 Breathing Exercise</title>
         <meta
           name="description"
           content="A calming 4-7-8 breathing exercise app to reduce anxiety and promote relaxation. Breathe in for 4 seconds, hold for 7, exhale for 8."

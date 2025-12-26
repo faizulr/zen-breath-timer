@@ -7,10 +7,10 @@ const Install = () => {
   return (
     <>
       <Helmet>
-        <title>Install Zen Breath - Add to Home Screen</title>
+        <title>Install Calm Breath Cycle - Add to Home Screen</title>
         <meta
           name="description"
-          content="Install Zen Breath on your device for quick access to calming breathing exercises anytime."
+          content="Install Calm Breath Cycle on your device for quick access to calming breathing exercises anytime."
         />
       </Helmet>
 
@@ -32,7 +32,7 @@ const Install = () => {
           </motion.div>
 
           <div className="space-y-2">
-            <h1 className="text-3xl font-light text-foreground">Install Zen Breath</h1>
+            <h1 className="text-3xl font-light text-foreground">Install Calm Breath Cycle</h1>
             <p className="text-muted-foreground">
               Add to your home screen for a native app experience
             </p>
@@ -88,7 +88,7 @@ const Install = () => {
             to="/"
             className="inline-block text-primary hover:text-primary/80 transition-colors"
           >
-            ← Back to Zen Breath
+            ← Back to Calm Breath Cycle
           </Link>
         </motion.div>
       </div>
